@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagalume</title>
+    <style>
+        @font-face {
+            font-family: 'Arkham';
+            src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+            font-weight: normal; /* ou 'bold', dependendo do estilo da fonte */
+            font-style: normal; /* ou 'italic' se for itálico */
+        }
+        body{
+            background-color: transparent;
+        }    
+        .video-background {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            min-width: 100%; 
+            min-height: 100%; 
+            width: auto; 
+            height: auto; 
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+        .conteudo {
+            z-index: 1;
+            font-family: 'Arkham', sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            max-width: 100%;
+        }
+        .photo {
+            float: left; /* Faz a imagem flutuar à esquerda */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+        .photo img {
+            max-width: 300px; /* Limita a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .name-box {
+            background-color: rgba(36, 79, 129, 0.975); /* Cor de fundo com transparência */
+            font-size: 35px; /* Tamanho da fonte */
+            color: black; /* Cor do texto */
+            padding: 20px; /* Espaçamento interno */
+            text-align: justify; /* Texto justificado para melhor legibilidade */
+        }
+        .nome {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="Fundo.mp4" type="video/mp4">
+    </video>
+    <div class="conteudo">
+        <div class="container">
+            <div class="name-box">
+                <div class="photo">
+                    <img src="Firefly.jpg" alt="Vagalume">
+                </div>
+                <div class="nome">
+                    <h1>VAGALUME</h1>
+                </div>
+                Vagalume é um incendiário em série piromaníaco e inimigo recorrente do Batman. 
+                Originalmente um especialista em pirotecnia, Garfield Lynns se voltou para o 
+                crime realizando ataques incendiários e incendiando grandes partes de Gotham 
+                no processo. Fiel ao seu nome, Vagalume foi originalmente concebido como um 
+                inimigo baseado em luz do Batman e Robin. No entanto, as encarnações modernas 
+                são retratadas como baseadas em fogo, muitas vezes usando dispositivos e armas 
+                com meios pirotécnicos. Vagalume raramente é visto sem um traje capaz de 
+                protegê-lo do calor, jetpack e lança-chamas. Em algumas histórias, ele é 
+                retratado como tendo uma obsessão pelo fogo, com suas tendências piromaníacas 
+                muitas vezes controlando suas ações.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

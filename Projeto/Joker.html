@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coringa</title>
+    <style>
+        @font-face {
+            font-family: 'Arkham';
+            src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+            font-weight: normal; /* ou 'bold', dependendo do estilo da fonte */
+            font-style: normal; /* ou 'italic' se for itálico */
+        }
+        body{
+            background-color: transparent;
+        }   
+        .video-background {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            min-width: 100%; 
+            min-height: 100%; 
+            width: auto; 
+            height: auto; 
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+        .conteudo {
+            z-index: 1;
+            font-family: 'Arkham', sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            max-width: 100%;
+        }
+        .photo {
+            float: left; /* Faz a imagem flutuar à esquerda */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+        .photo img {
+            max-width: 300px; /* Limita a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .name-box {
+            background-color: rgba(36, 79, 129, 0.975); /* Cor de fundo com transparência */
+            font-size: 35px; /* Tamanho da fonte */
+            color: black; /* Cor do texto */
+            padding: 20px; /* Espaçamento interno */
+            text-align: justify; /* Texto justificado para melhor legibilidade */
+        }
+        .nome {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="Fundo.mp4" type="video/mp4">
+    </video>
+    <div class="conteudo">
+        <div class="container">
+            <div class="name-box">
+                <div class="photo">
+                    <img src="Joker.jpg" alt="Coringa">
+                </div>
+                <div class="nome">
+                    <h1>CORINGA</h1>
+                </div>
+                O Coringa é um supervilão e o arqui-inimigo do Batman. 
+                Apresentado pela primeira vez em Batman #1 (primavera de 1940), 
+                ele era originalmente um gênio do crime com um senso de humor 
+                tortuoso. Inicialmente destinado a servir como aparições únicas, 
+                a popularidade instantânea do Coringa garantiu que o personagem 
+                continuasse a aparecer, tornando-se um inimigo frequente do 
+                Cavaleiro das Trevas e Robin, o Menino Prodígio . No final da 
+                década de 1940, o Coringa foi reinventado como um brincalhão 
+                inofensivo. Caindo na obscuridade na década de 1960, ele foi 
+                reintroduzido na década de 1970 como uma ameaça mais legítima 
+                e um dos criminosos mais infames de Gotham City . Nos últimos 
+                anos, o personagem assumiu a persona de um mal encarnado, 
+                simplesmente tendo alegria em atormentar o Batman ou tentar 
+                empurrá-lo para a vilania.<br><br>
+                Amplamente considerado o arqui-inimigo do Batman, o Coringa 
+                também foi responsável por inúmeras tragédias na vida do Batman, 
+                incluindo a paralisia de Barbara Gordon e a morte de Jason Todd, 
+                o segundo Robin . Sua caracterização mudou ao longo dos anos, 
+                com a encarnação mais comum sendo um gênio do crime que comete 
+                crimes para seu próprio entretenimento. O Coringa também é 
+                considerado um dos personagens mais conhecidos da DC, com ele 
+                também lutando contra outros heróis como Superman e Mulher-Maravilha. 
+                O personagem também se tornou um ícone na cultura popular, geralmente 
+                por meio de suas representações em várias mídias relacionadas ao 
+                Batman e outras propriedades da DC.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Arkham';
+    src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal; /* ou 'bold', dependendo do estilo da fonte */
+    font-style: normal; /* ou 'italic' se for itálico */
+}           
+body{
+    background-color: transparent;
+} 
+.video-background {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.conteudo {
+    z-index: 1;
+    font-family: 'Arkham', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    display: flex; /* Usa Flexbox para organizar itens em linha */
+    align-items: center; /* Alinha itens verticalmente no centro */
+    justify-content: center; /* Centraliza horizontalmente o contêiner */
+    padding: 20px; /* Espaçamento superior */
+}
+.photo {
+    width: 175px; /* Largura fixa da foto */
+    height: 175px; /* Altura fixa da foto */
+    overflow: hidden; /* Esconde o excesso da imagem */
+   
+}
+.photo img {
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: 100%; /* Mantém a proporção da imagem */
+}
+.name-box {
+    padding: 54px; /* Espaçamento interno da caixa do nome */
+    width: 500px; /* Largura da caixa */
+    background-color: rgba(36, 80, 129, 0.7); /* Cor de fundo da caixa do nome com transparência */
+    font-size: 50px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    transition: 0.3s;
+}
+
+.name-box:hover {
+    background-color: rgba(255, 255, 255, 0.500); /* Altere a cor aqui para a sua escolha */
+    color: darkgray
+}
+
+a {
+    text-decoration: none;
+}
+

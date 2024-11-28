@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor Frio</title>
+    <style>
+        @font-face {
+            font-family: 'Arkham';
+            src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+            font-weight: normal; /* ou 'bold', dependendo do estilo da fonte */
+            font-style: normal; /* ou 'italic' se for itálico */
+        }
+        body{
+            background-color: transparent;
+        }    
+        .video-background {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            min-width: 100%; 
+            min-height: 100%; 
+            width: auto; 
+            height: auto; 
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+        .conteudo {
+            z-index: 1;
+            font-family: 'Arkham', sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            max-width: 100%;
+        }
+        .photo {
+            float: left; /* Faz a imagem flutuar à esquerda */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+        .photo img {
+            max-width: 300px; /* Limita a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .name-box {
+            background-color: rgba(36, 79, 129, 0.975); /* Cor de fundo com transparência */
+            font-size: 35px; /* Tamanho da fonte */
+            color: black; /* Cor do texto */
+            padding: 20px; /* Espaçamento interno */
+            text-align: justify; /* Texto justificado para melhor legibilidade */
+        }
+        .nome {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="Fundo.mp4" type="video/mp4">
+    </video>
+    <div class="conteudo">
+        <div class="container">
+            <div class="name-box">
+                <div class="photo">
+                    <img src="MrFreeze.jpg" alt="Senhor Frio">
+                </div>
+                <div class="nome">
+                    <h1>SENHOR FRIO</h1>
+                </div>
+                Dr. Victor Fries (pronuncia-se "freeze") era um criogenista talentoso 
+                cuja amada esposa Nora foi acometida por uma doença degenerativa fatal. 
+                Fries a colocou em animação suspensa enquanto procurava uma maneira de 
+                curá-la. Mas o CEO da GothCorp, Ferris Boyle, parou de financiar a 
+                pesquisa — e a vida de Nora — e puxou o plugue, desencadeando um acidente 
+                que transformou o corpo de Fries em uma forma de sangue frio que deve 
+                sempre ser mantida em temperaturas abaixo de zero; em temperatura ambiente 
+                normal, ele morrerá. <br><br>
+                Empunhando uma série de armas congelantes, ele veste um traje criogênico 
+                protetor em sua busca para, de alguma forma, restaurar a saúde completa de 
+                sua esposa e vingar seu destino — pelo qual ele responsabiliza, em parte, Batman.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

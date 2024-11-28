@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascara Negra</title>
+    <style>
+        @font-face {
+            font-family: 'Arkham';
+            src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+            font-weight: normal; /* ou 'bold', dependendo do estilo da fonte */
+            font-style: normal; /* ou 'italic' se for itálico */
+        }
+        body{
+            background-color: transparent;
+        }   
+        .video-background {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            min-width: 100%; 
+            min-height: 100%; 
+            width: auto; 
+            height: auto; 
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+        .conteudo {
+            z-index: 1;
+            font-family: 'Arkham', sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            max-width: 100%;
+        }
+        .photo {
+            float: left; /* Faz a imagem flutuar à esquerda */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+        .photo img {
+            max-width: 300px; /* Limita a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .name-box {
+            background-color: rgba(36, 79, 129, 0.975); /* Cor de fundo com transparência */
+            font-size: 35px; /* Tamanho da fonte */
+            color: black; /* Cor do texto */
+            padding: 20px; /* Espaçamento interno */
+            text-align: justify; /* Texto justificado para melhor legibilidade */
+        }
+        .nome {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="Fundo.mp4" type="video/mp4">
+    </video>
+    <div class="conteudo">
+        <div class="container">
+            <div class="name-box">
+                <div class="photo">
+                    <img src="Mascara.jpg" alt="Mascara Negra">
+                </div>
+                <div class="nome">
+                    <h1>MÁSCARA NEGRA</h1>
+                </div>
+                Roman Sionis, um ex-executivo de negócios e chefe da máfia que 
+                originalmente odiava Bruce Wayne em vez de Batman, usa uma máscara 
+                de madeira preta e lidera a Família do Crime Sionis, também conhecida 
+                como False Facers. Máscara Negra eventualmente se tornou um chefe da 
+                máfia controlando grandes seções do submundo criminoso de Gotham City.<br><br>
+
+                Após a morte suspeita de seus pais multimilionários, Sionis herdou sua 
+                fortuna e levou sua empresa à falência. Salvo por uma compra de Bruce 
+                Wayne, Sionis passou a se ressentir e odiar Wayne. Fixado no conceito 
+                de máscaras, Sionis esculpiu uma do caixão preto de seu pai e buscou 
+                vingança; sua batalha subsequente com o Cavaleiro das Trevas fez com 
+                que sua máscara fosse queimada em sua pele, refazendo-o como a Máscara Negra. 
+                Sionis agora é um temido líder de gangue e um dos chefes da máfia mais poderosos
+                de Gotham, com um ódio ardente por Batman.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        @font-face {
+            font-family: 'Arkham';
+            src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+            font-weight: normal; /* ou 'bold', dependendo do estilo da fonte */
+            font-style: normal; /* ou 'italic' se for itálico */
+        } 
+        .video-background {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            min-width: 100%; 
+            min-height: 100%; 
+            width: auto; 
+            height: auto; 
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+        body {
+            font-family: Arkham, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: transparent;
+        }
+        .login-container {
+            background-color: rgba(36, 80, 129, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            background-color: rgb(173, 177, 177);
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: rgb(42, 122, 214);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: rgba(36, 79, 129, 0.89);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="Logo.mp4" type="video/mp4">
+    </video>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuário" required><br>
+            <input type="password" id="password" placeholder="Senha" required><br>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio do formulário padrão
+
+            const correctUsername = 'Vingança';
+            const correctPassword = 'Sombra';
+
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            // Verifica se o usuário e senha estão corretos
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = 'Batcomputador.html'; // Redireciona para outra página
+            }
+        });
+    </script>
+</body>
+</html>

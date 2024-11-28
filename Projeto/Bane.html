@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bane</title>
+    <style>
+        @font-face {
+            font-family: 'Arkham';
+            src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+            font-weight: normal; /* ou 'bold', dependendo do estilo da fonte */
+            font-style: normal; /* ou 'italic' se for itálico */
+        }
+        body{
+            background-color: transparent;
+        }   
+        .video-background {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            min-width: 100%; 
+            min-height: 100%; 
+            width: auto; 
+            height: auto; 
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+        .conteudo {
+            z-index: 1;
+            font-family: 'Arkham', sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+            background-color: transparent;
+        }
+        .container {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            max-width: 100%;
+            background-color: transparent;
+        }
+        .photo {
+            float: left; /* Faz a imagem flutuar à esquerda */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        }
+        .photo img {
+            max-width: 300px; /* Limita a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .name-box {
+            background-color: rgba(36, 79, 129, 0.975); /* Cor de fundo com transparência */
+            font-size: 35px; /* Tamanho da fonte */
+            color: black; /* Cor do texto */
+            padding: 20px; /* Espaçamento interno */
+            text-align: justify; /* Texto justificado para melhor legibilidade */
+        }
+        .nome {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="Fundo.mp4" type="video/mp4">
+    </video>
+    <div class="conteudo">
+        <div class="container">
+            <div class="name-box">
+                <div class="photo">
+                    <img src="Bane.jpg" alt="Bane">
+                </div>
+                <div class="nome">
+                    <h1>BANE</h1>
+                </div>
+                Bane é um condenado fugitivo de uma prisão insular 
+                na América do Sul e um supervilão/assassino. Bane 
+                tem força física anormal como resultado de ter 
+                passado por experimentos envolvendo um derivado da 
+                droga Venom. Ele ficou conhecido como "O Homem que 
+                Quebrou o Morcego" quando quebrou as costas do Batman, 
+                forçando Bruce Wayne a desistir da persona do Batman 
+                enquanto se recuperava. Bane foi originalmente criado 
+                pelos escritores Chuck Dixon e Doug Moench e pelo 
+                artista Graham Nolan , a partir de um conceito de 
+                Denny O'Neil . Ele apareceu pela primeira vez em 
+                Batman: Vengeance of Bane #1 (janeiro de 1993).
+            </div>
+        </div>
+    </div>
+</body>
+</html>
